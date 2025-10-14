@@ -17,6 +17,9 @@ import OnlineConsultation from "./forms/OnlineConsultation"
 import HomeLabTestForm from "./forms/HomeLabTestForm"
 import CenterLabTestForm from "./forms/CenterLabTestForm"
 
+import Login from "./pages/Login"
+import Register from "./pages/Register"
+
 import Footer from './components/Footer'
 function App() {
 
@@ -41,6 +44,9 @@ function App() {
                 <Route path="/consultation/online" element={<OnlineConsultation />} />
                 <Route path="/test/home" element={<HomeLabTestForm />} />
                 <Route path="/test/center" element={<CenterLabTestForm />} />
+
+                <Route path="/login" element={<Login />} />
+                <Route path="/register" element={<Register />} />
             </Routes>
             <Footer/>
         </>
