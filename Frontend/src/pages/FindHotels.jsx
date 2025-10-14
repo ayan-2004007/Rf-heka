@@ -54,9 +54,9 @@ const FindHotels = () => {
                                         <div className="flex">{renderStars(ratingNum)}</div>
                                         {h.hours && <p className="text-[#6b6b6b] tracking-tight">{h.hours}</p>}
                                     </div>
-                                    <button className="bg-[#FF6700] hover:bg-[#b94a00] text-white font-semibold py-2 px-3 rounded-lg w-36 tracking-tighter">
-                                        Book Now
-                                    </button>
+                                    <a href="tel:6289924753" className="bg-[#FF6700] hover:bg-[#b94a00] text-white font-semibold py-2 px-3 rounded-lg w-36 tracking-tighter">
+                                        Contact Heka
+                                    </a>
                                 </div>
                             </div>
                         )

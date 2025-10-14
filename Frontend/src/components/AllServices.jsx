@@ -1,5 +1,7 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 import allopathy from "../assets/Allopathy.png";
 import homeopathy from "../assets/Homeopathy.png";
@@ -28,7 +30,7 @@ const services = [
     { title: "Home Care", sub: "Services", image: ic7, route: "/choose-city/home-care" },
     { title: "Doctor", sub: "Consultations", image: ic6, route: "/consultation" },
     { title: "Hospital", sub: "Admission", image: ic8, route: "/admission", isPopup: true },
-    { title: "Add Patient", sub: "Details", image: ic10, route: "/patient-details" },
+    { title: "Add Patient", sub: "Details", image: ic10, route: "/patient/add" },
     { title: "Book", sub: "Ambulance", image: ic4, route: "/choose-city/ambulance" },
     { title: "Lab", sub: "Tests", image: ic9, route: "/test" },
 
@@ -39,6 +41,8 @@ const categories = [
     { title: "Homeopathy", icon: homeopathy },
     { title: "Ayurvedic", icon: ayurvedic },
 ];
+
+
 
 export default function AllServices() {
     const [selectedCategory, setSelectedCategory] = useState("Allopathy");
@@ -54,6 +58,11 @@ export default function AllServices() {
             navigate(c.route);
         }
     };
+
+    useEffect(() => {
+        AOS.init({})
+        AOS.refresh()
+    }, [])
 
     return (
         <div className="font-dmsans w-full bg-white flex flex-col gap-20 items-center p-4">
@@ -75,6 +84,9 @@ export default function AllServices() {
                 <div className="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
                     {filteredServices.map((item, index) => (
                         <button
+                        data-aos="fade-up"
+                        data-aos-duration="1500"
+                        data-aos-anchor-placement="center-bottom"
                             key={index}
                             onClick={() => handleCardClick(item)}
                             className="relative text-left rounded-[16px] overflow-hidden border-2 border-[#E6E6E6] bg-white focus:outline-none focus:ring-2 focus:ring-orange-300 transform transition duration-150 active:scale-95"

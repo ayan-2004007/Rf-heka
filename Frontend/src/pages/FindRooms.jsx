@@ -39,9 +39,9 @@ const FindRooms = () => {
                                     <p>Check-out: {r.checkOut}</p>
                                     <p>Reviews: {r.reviews}+ </p>
                                 </div>
-                                <button className="bg-[#FF6700] hover:bg-[#b94a00] text-white font-semibold py-2 px-3 rounded-lg w-36 tracking-tighter">
-                                        Contact Now
-                                    </button>
+                                <a href="tel:6289924753" className="bg-[#FF6700] hover:bg-[#b94a00] text-white font-semibold py-2 px-3 rounded-lg w-36 tracking-tighter">
+                                        Contact Heka
+                                    </a>
                             </div>
                         </div>
                     ))}

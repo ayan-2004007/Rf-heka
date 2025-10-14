@@ -26,25 +26,28 @@ const EmergencyServices = () => {
                             <div className="flex flex-col gap-4 w-full">
                                 <div className="flex flex-col gap-1">
                                     <h2 className="text-2xl font-semibold text-[#2F3B59] tracking-tighter">{e.name}</h2>
-                                    <p className="text-[#6b6b6b] tracking-tight">{e.address}</p>
+                                    {/* <p className="text-[#6b6b6b] tracking-tight">{e.address}</p> */}
                                 </div>
                                 <div className="flex flex-col gap-1">
-                                    <p className="text-[#005A03] font-bold tracking-tighter">{e.reviews}+ Reviews</p>
-                                    <div className="flex flex-wrap gap-1">
+                                    {/* <p className="text-[#005A03] font-bold tracking-tighter">{e.reviews}+ Reviews</p> */}
+                                    {/* <div className="flex flex-wrap gap-1">
                                         {e.services.map((service, idx) => (
                                             <span key={idx} className="bg-gray-200 text-gray-800 text-sm font-medium px-2 py-1 rounded-md tracking-tight">
                                                 {service}
                                             </span>
                                         ))}
-                                    </div>
+                                    </div> */}
                                 </div>
                                 <div className="flex flex-col gap-1 text-[#6b6b6b] tracking-tight">
                                     <p>Hours: {e.hours}</p>
                                     <p>Status: {e.status}</p>
-                                    <p className="font-bold">Contact: {e.phone}</p>
+                                    {/* <p className="font-bold">Contact: {e.phone}</p> */}
                                     <p>Response Time: {e.responseTime}</p>
-                                    <p>Rating: {e.rating} ⭐</p>
+                                    {/* <p>Rating: {e.rating} ⭐</p> */}
                                 </div>
+                                 <a href="tel:6289924753" className="bg-[#FF6700] hover:bg-[#b94a00] text-white font-semibold py-2 px-3 rounded-lg w-36 tracking-tighter">
+                                        Contact Heka
+                                    </a>
                             </div>
                         </div>
                     ))}

@@ -29,7 +29,7 @@ const FindHospitals = () => {
                                     <p className="text-[#6b6b6b] tracking-tight">{h.address}</p>
                                 </div>
                                 <div className="flex flex-col gap-1">
-                                    <p className="text-[#005A03] font-bold tracking-tighter">☎ {h.phone}</p>
+                                    {/* <p className="text-[#005A03] font-bold tracking-tighter">☎ {h.phone}</p> */}
                                     <div className="flex flex-wrap gap-1">
                                         {h.services.map((service, idx) => (
                                             <span key={idx} className="bg-[#F9C6A3] text-gray-800 text-sm font-medium px-2 py-1 rounded-md tracking-tight">
@@ -37,13 +37,13 @@ const FindHospitals = () => {
                                             </span>
                                         ))}
                                     </div>
-                                    <p className="text-[#6b6b6b] tracking-tight">Rating: {h.rating} ⭐</p>
-                                    <p className="text-[#6b6b6b] tracking-tight">Reviews: {h.reviews}</p>
+                                    {/* <p className="text-[#6b6b6b] tracking-tight">Rating: {h.rating} ⭐</p> */}
+                                    {/* <p className="text-[#6b6b6b] tracking-tight">Reviews: {h.reviews}</p> */}
                                     <p className="text-[#6b6b6b] tracking-tight">Working Hours: {h.hours}</p>
                                 </div>
-                                <button className="bg-[#FF6700] hover:bg-[#b94a00] text-white font-semibold py-2 px-3 rounded-lg w-36 tracking-tighter">
-                                    Contact Now
-                                </button>
+                                <a href="tel:6289924753" className="bg-[#FF6700] hover:bg-[#b94a00] text-white font-semibold py-2 px-3 rounded-lg w-36 tracking-tighter">
+                                    Contact Heka
+                                </a>
                             </div>
                         </div>
                     ))}

@@ -2,8 +2,8 @@ export const db = {
     hospitals: {
         Kolkata: [
             {
-                name: "Apollo Gleneagles Hospital",
-                address: "58 Canal Circular Rd, Kadapara, Kolkata",
+                name: "Manipal Hospitals",
+                address: "Mukundapur",
                 phone: "+91 33 2320 3040",
                 services: ["Emergency", "ICU", "Cardiology", "Neurology"],
                 rating: 4.6,
@@ -12,8 +12,8 @@ export const db = {
                 image: "https://via.placeholder.com/80x80?text=Apollo",
             },
             {
-                name: "AMRI Hospital",
-                address: "JC-16 & 17, Salt Lake City, Kolkata",
+                name: "Narayana Hospitals",
+                address: "Mukundapur",
                 phone: "+91 33 6606 3800",
                 services: ["Surgery", "Orthopedics", "Oncology"],
                 rating: 4.4,
@@ -22,8 +22,8 @@ export const db = {
                 image: "https://via.placeholder.com/80x80?text=AMRI",
             },
             {
-                name: "Fortis Hospital",
-                address: "19, Canal Circular Rd, Kolkata",
+                name: "KPC Medical College & Hospital",
+                address: "Jadavpur",
                 phone: "+91 33 2222 3333",
                 services: ["Cardiology", "Orthopedics", "Neurology", "ICU"],
                 rating: 4.5,
@@ -32,18 +32,48 @@ export const db = {
                 image: "https://via.placeholder.com/80x80?text=Fortis",
             },
             {
-                name: "Ruby General Hospital",
-                address: "8, Southern Avenue, Kolkata",
+                name: "Genesis Hospital",
+                address: "Rajdanga Main Road",
                 phone: "+91 33 4040 4040",
-                services: ["Emergency", "Pediatrics", "Neurology", "ICU"],
+                services: ["General Surgery", "Urology", "Gastroenterology", "Gynaecology"],
                 rating: 4.3,
                 reviews: 1700,
                 hours: "24/7",
                 image: "https://via.placeholder.com/80x80?text=Ruby",
             },
             {
-                name: "Belle Vue Clinic",
-                address: "5, Park Street, Kolkata",
+                name: "HCG Cancer Centre",
+                address: "Newtown",
+                phone: "+91 33 2222 1111",
+                services: ["General Medicine", "Orthopedics", "ICU"],
+                rating: 4.2,
+                reviews: 1200,
+                hours: "24/7",
+                image: "https://via.placeholder.com/80x80?text=BelleVue",
+            },
+            {
+                name: "Remedy Hospital",
+                address: "Garia",
+                phone: "+91 33 2222 1111",
+                services: ["General Medicine", "Orthopedics", "ICU"],
+                rating: 4.2,
+                reviews: 1200,
+                hours: "24/7",
+                image: "https://via.placeholder.com/80x80?text=BelleVue",
+            },
+            {
+                name: "ILS Hospital",
+                address: "Saltlake",
+                phone: "+91 33 2222 1111",
+                services: ["General Medicine", "Orthopedics", "ICU"],
+                rating: 4.2,
+                reviews: 1200,
+                hours: "24/7",
+                image: "https://via.placeholder.com/80x80?text=BelleVue",
+            },
+            {
+                name: "HHP Hospital Pvt Ltd",
+                address: "Garia",
                 phone: "+91 33 2222 1111",
                 services: ["General Medicine", "Orthopedics", "ICU"],
                 rating: 4.2,
@@ -180,9 +210,9 @@ export const db = {
     rooms: {
         Kolkata: [
             {
-                name: "The Oberoi Grand",
-                address: "15 Jawaharlal Nehru Rd, Kolkata",
-                price: "12,000/night",
+                name: "Sushama Accomodation",
+                address: "Newtown , Saltlake",
+                price: "1200/night",
                 type: "Deluxe Room",
                 beds: 2,
                 amenities: ["WiFi", "Breakfast", "Air Conditioning", "Pool Access"],
@@ -192,9 +222,9 @@ export const db = {
                 image: "https://via.placeholder.com/80x80?text=Oberoi"
             },
             {
-                name: "ITC Sonar",
-                address: "JBS Haldane Ave, Kolkata",
-                price: "10,500/night",
+                name: "Sunflower Inn",
+                address: "Newtown",
+                price: "800/night",
                 type: "Executive Suite",
                 beds: 2,
                 amenities: ["WiFi", "Gym", "Spa", "Breakfast Included"],
@@ -204,9 +234,9 @@ export const db = {
                 image: "https://via.placeholder.com/80x80?text=ITC+Sonar"
             },
             {
-                name: "Hyatt Regency",
-                address: "1B, Old Post Office St, Kolkata",
-                price: "8,500/night",
+                name: "Blue Cherry Guest House",
+                address: "Ruby",
+                price: "800/night",
                 type: "Standard Room",
                 beds: 1,
                 amenities: ["WiFi", "Breakfast", "Parking"],
@@ -216,9 +246,9 @@ export const db = {
                 image: "https://via.placeholder.com/80x80?text=Hyatt"
             },
             {
-                name: "Park Plaza",
-                address: "17, Shakespeare Sarani, Kolkata",
-                price: "9,200/night",
+                name: "Rubby's Inn",
+                address: "Ruby",
+                price: "800/night",
                 type: "Superior Room",
                 beds: 2,
                 amenities: ["WiFi", "Breakfast", "Pool Access"],
@@ -226,7 +256,43 @@ export const db = {
                 checkOut: "11:00 AM",
                 reviews: 89,
                 image: "https://via.placeholder.com/80x80?text=Park+Plaza"
-            }
+            },
+            {
+                name: "Regency Guest House",
+                address: "Mukundapur",
+                price: "950/night",
+                type: "Superior Room",
+                beds: 2,
+                amenities: ["WiFi", "Breakfast", "Pool Access"],
+                checkIn: "2:00 PM",
+                checkOut: "11:00 AM",
+                reviews: 89,
+                image: "https://via.placeholder.com/80x80?text=Park+Plaza"
+            },
+            {
+                name: "Gangotri Guest House",
+                address: "Ruby",
+                price: "800/night",
+                type: "Superior Room",
+                beds: 2,
+                amenities: ["WiFi", "Breakfast", "Pool Access"],
+                checkIn: "2:00 PM",
+                checkOut: "11:00 AM",
+                reviews: 89,
+                image: "https://via.placeholder.com/80x80?text=Park+Plaza"
+            },
+            {
+                name: "Narendra Niketan",
+                address: "Sealdah",
+                price: "800/night",
+                type: "Superior Room",
+                beds: 2,
+                amenities: ["WiFi", "Breakfast", "Pool Access"],
+                checkIn: "2:00 PM",
+                checkOut: "11:00 AM",
+                reviews: 89,
+                image: "https://via.placeholder.com/80x80?text=Park+Plaza"
+            },
         ],
         Delhi: [
             {
@@ -402,38 +468,74 @@ export const db = {
     emergencyServices: {
     Kolkata: [
         {
-            name: "City Emergency Response",
+            name: "Medical Oxygen Cylinder",
             address: "Park Street, Kolkata",
             reviews: 120,
             services: ["Fire Response", "Medical Emergency", "Accident Assistance"],
-            hours: "24/7",
+            hours: "7am to 10pm",
             status: "Available",
             phone: "+91 33 4000 5555",
-            responseTime: "10-15 min",
+            responseTime: "30min",
             rating: 4.8,
             image: "https://via.placeholder.com/80x80?text=CityER"
         },
         {
-            name: "Rapid Rescue Kolkata",
+            name: "Urinary Catheters",
             address: "Salt Lake City, Kolkata",
             reviews: 95,
             services: ["Ambulance Service", "Trauma Care", "Disaster Response"],
-            hours: "24/7",
+            hours: "7am to 10pm",
             status: "Busy",
             phone: "+91 33 4000 7777",
-            responseTime: "12-20 min",
+            responseTime: "30min",
             rating: 4.6,
             image: "https://via.placeholder.com/80x80?text=RapidRescue"
         },
         {
-            name: "MedCare Emergency",
+            name: "Nebuliser Machine",
             address: "Ballygunge, Kolkata",
             reviews: 80,
             services: ["Fire Safety", "Medical Evacuation", "Disaster Relief"],
-            hours: "24/7",
+            hours: "7am to 10pm",
             status: "Available",
             phone: "+91 33 4000 8888",
-            responseTime: "15 min",
+            responseTime: "30min",
+            rating: 4.7,
+            image: "https://via.placeholder.com/80x80?text=MedCare"
+        },
+        {
+            name: "BiPAP Machine",
+            address: "Ballygunge, Kolkata",
+            reviews: 80,
+            services: ["Fire Safety", "Medical Evacuation", "Disaster Relief"],
+            hours: "7am to 10pm",
+            status: "Available",
+            phone: "+91 33 4000 8888",
+            responseTime: "30min",
+            rating: 4.7,
+            image: "https://via.placeholder.com/80x80?text=MedCare"
+        },
+        {
+            name: "Rice Tube",
+            address: "Ballygunge, Kolkata",
+            reviews: 80,
+            services: ["Fire Safety", "Medical Evacuation", "Disaster Relief"],
+            hours: "7am to 10pm",
+            status: "Available",
+            phone: "+91 33 4000 8888",
+            responseTime: "30min",
+            rating: 4.7,
+            image: "https://via.placeholder.com/80x80?text=MedCare"
+        },
+        {
+            name: "Saline",
+            address: "Ballygunge, Kolkata",
+            reviews: 80,
+            services: ["Fire Safety", "Medical Evacuation", "Disaster Relief"],
+            hours: "7am to 10pm",
+            status: "Available",
+            phone: "+91 33 4000 8888",
+            responseTime: "30min",
             rating: 4.7,
             image: "https://via.placeholder.com/80x80?text=MedCare"
         }
@@ -507,23 +609,23 @@ export const db = {
     homeCareServices: {
     Kolkata: [
         {
-            name: "Kolkata Personal Care",
+            name: "Health Care Technician",
             address: "Park Street, Kolkata",
             reviews: 80,
-            services: ["Elderly Care", "Household Help", "Personal Assistance"],
+            services: ["Elderly Care", "Household Help", "Personal Assistance","Pressure Checking","Random Sugar Checking"],
             details: "Certified caregivers available 24/7",
             image: "https://via.placeholder.com/80x80?text=KolkataPC"
         },
         {
-            name: "Home Health Kolkata",
+            name: "Trained Female Nurse",
             address: "Salt Lake City, Kolkata",
             reviews: 65,
-            services: ["Nursing", "Physiotherapy", "Medical Help"],
+            services: ["Nursing", "Medical Help"],
             details: "Experienced nurses for in-home care",
             image: "https://via.placeholder.com/80x80?text=HomeHealth"
         },
         {
-            name: "Medicare Home Care",
+            name: "Trained Male Nurse",
             address: "Ballygunge, Kolkata",
             reviews: 70,
             services: ["Elderly Care", "Medical Assistance", "Housekeeping"],
@@ -531,10 +633,10 @@ export const db = {
             image: "https://via.placeholder.com/80x80?text=MedicareHC"
         },
         {
-            name: "Rapid Home Support",
+            name: "Physiotherapist",
             address: "Esplanade, Kolkata",
             reviews: 60,
-            services: ["Personal Assistance", "Nursing", "Household Help"],
+            services: ["Physiotherapy"],
             details: "Flexible timings and verified staff",
             image: "https://via.placeholder.com/80x80?text=RapidHC"
         }

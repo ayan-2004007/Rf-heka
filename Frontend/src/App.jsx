@@ -16,6 +16,7 @@ import OfflineConsultation from "./forms/OfflineConsultation"
 import OnlineConsultation from "./forms/OnlineConsultation"
 import HomeLabTestForm from "./forms/HomeLabTestForm"
 import CenterLabTestForm from "./forms/CenterLabTestForm"
+import AddPatient from "./pages/AddPatient"
 
 import Login from "./pages/Login"
 import Register from "./pages/Register"
@@ -44,6 +45,7 @@ function App() {
                 <Route path="/consultation/online" element={<OnlineConsultation />} />
                 <Route path="/test/home" element={<HomeLabTestForm />} />
                 <Route path="/test/center" element={<CenterLabTestForm />} />
+                <Route path="/patient/add" element={<AddPatient />} />
 
                 <Route path="/login" element={<Login />} />
                 <Route path="/register" element={<Register />} />

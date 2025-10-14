@@ -7,28 +7,20 @@ import { useNavigate } from "react-router-dom";
 export default function Navbar() {
   const navigate=useNavigate()
   return (
-    <div className="bg-gradient-to-b from-[#FEC163] to-[#DE4313] p-8">
+    <div className="bg-gradient-to-b from-[#FEC163] to-[#DE4313] px-8 pb-8 pt-6">
       {/* Top Section */}
       <div className="font-dmsans flex items-center justify-between">
-        {/* Left Side - User Info */}
         <div>
-          <h1 className="font-dmsans text-white font-semibold text-lg leading-tight">
-            Ujjal Dey Sarkar
-          </h1>
-          <p className="font-dmsans text-white text-xs opacity-90">
-            Pioneer Tower Premises No.<br/> 20-084, Street No. 85
-          </p>
+          <h1 className="font-literata text-white text-4xl font-bold">HEKA</h1>
         </div>
-
-        {/* Right Side - Icons */}
         <div className="flex items-center space-x-2 text-white">
-          <button onClick={()=>{navigate("/register")}} className="border-1 border-white text-white px-3 py-2 text-sx font-bold tracking-tighter rounded-lg" >Sign Up</button>
+          <button onClick={()=>{navigate("/register")}} className="border-1 border-white text-white px-3 py-2 text-sm font-bold tracking-tighter rounded-lg" >Sign Up</button>
           <img src={alarm} alt="" className="w-8 h-8 cursor-pointer" />
         </div>
       </div>
 
       {/* Search Bar */}
-      <div className="mt-4">
+      <div className="mt-4 ">
         <div className="flex items-center bg-white rounded-full px-4 py-2 shadow-sm">
           <img 
             src={search}

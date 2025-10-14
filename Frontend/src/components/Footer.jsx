@@ -6,7 +6,7 @@ import question from "../assets/question.png"
 
 export default function Footer() {
   return (
-    <footer className="bg-[#c04d00] text-white py-3 fixed bottom-0 w-full z-50">
+    <footer className="font-dmsans bg-[#c04d00] text-white py-3 fixed bottom-0 w-full z-50">
       <div className="flex justify-around items-center text-center">
         {/* Home */}
         <div className="flex flex-col items-center">
@@ -17,19 +17,12 @@ export default function Footer() {
         {/* Reports */}
         <div className="flex flex-col items-center">
           <img src={report} className="w-6 h-6 mb-1" />
-          <span className="font-dmsans text-xs">Reports</span>
-        </div>
-
-        {/* Settings */}
-        <div className="flex flex-col items-center">
-          <img src={seting} className="w-6 h-6 mb-1" />
-          <span className="font-dmsans text-xs">Settings</span>
+          <span className="font-dmsans text-xs">Add Patient</span>
         </div>
 
         {/* Help */}
         <div className="flex flex-col items-center">
-          <img src={question} className="w-6 h-6 mb-1" />
-          <span className="font-dmsans text-xs">Help</span>
+          <a href="tel:6289924753" onClick={()=>{navigate("/register")}} className="border-1 border-white text-white px-3 py-2 text-sm font-bold tracking-tighter rounded-lg" >Emergency</a>
         </div>
       </div>
     </footer>
