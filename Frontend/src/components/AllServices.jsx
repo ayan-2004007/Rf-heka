@@ -56,19 +56,16 @@ export default function AllServices() {
     };
 
     return (
-        <div className="font-dmsans w-full bg-white flex flex-col items-center p-4">
+        <div className="font-dmsans w-full bg-white flex flex-col gap-20 items-center p-4">
             {/* Categories */}
-            <div className="mb-6 flex flex-wrap justify-center gap-3 w-full max-w-lg px-2">
+            <div className="flex flex-wrap justify-center gap-4 w-full max-w-sm sm:max-w-sm">
                 {categories.map((cat) => (
                     <button
                         key={cat.title}
                         onClick={() => setSelectedCategory(cat.title)}
-                        className={`flex flex-col items-center justify-center w-24 sm:w-28 rounded-lg py-2 sm:py-3 transform transition-all duration-200
-              ${selectedCategory === cat.title ? "scale-105 ring-2 ring-offset-1 ring-orange-300 bg-[#212121] text-white" : "bg-white text-[#212121] shadow-sm"}`}
-                        aria-pressed={selectedCategory === cat.title}
-                    >
-                        <img src={cat.icon} alt={cat.title} className="w-7 h-7 mb-1" />
-                        <span className="text-xs sm:text-sm font-medium">{cat.title}</span>
+                        className={`flex flex-col items-center justify-center w-24 sm:w-28 rounded-lg py-2 sm:py-3 transition-all duration-200 ${selectedCategory === cat.title ? "bg-gradient-to-b from-[#00DDC5] to-[#00695E] text-white scale-125" : "bg-gradient-to-b from-[#00DDC5] to-[#00695E] text-white"}`} >
+                        <img src={cat.icon} alt={cat.title} className="w-6 h-6 sm:w-7 sm:h-7 mb-1" />
+                        <span className="text-xs sm:text-sm font-medium"> {cat.title} </span>
                     </button>
                 ))}
             </div>

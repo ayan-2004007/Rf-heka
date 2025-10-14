@@ -1,8 +1,10 @@
 import React from "react";
+import { useNavigate } from "react-router-dom";
 import bg from "../assets/Register.png";
 import arrow from "../assets/arrow.png";
 
 export default function Register() {
+    const navigate=useNavigate()
     return (
         <div className="min-h-[90vh] font-dmsans pb-6 flex flex-col items-center justify-center bg-white px-4">
             {/* Illustration at the top */}
@@ -12,11 +14,9 @@ export default function Register() {
 
             {/* Card */}
             <div className="relative z-20 bottom-24 rounded-2xl overflow-hidden shadow-lg mx-auto w-full max-w-sm">
-                <div className="p-8 bg-gradient-to-b from-[#FEC163] to-[#DE4313] text-white py-20">
-                    <h1 className="text-center font-dmsans text-[44px] font-semibold tracking-wide">REGISTER</h1>
-
-                    <form className="mt-8 space-y-4" onSubmit={(e) => e.preventDefault()}>
-                        {/* Name input */}
+                <div className="p-8 bg-gradient-to-b from-[#FEC163] to-[#DE4313] text-white py-10">
+                    <h1 className="text-center font-dmsans text-[44px] font-semibold tracking-tighter">Sign Up</h1>
+                    <form className="mt-8 space-y-2" onSubmit={(e) => e.preventDefault()}>
                         <label className="block">
                             <input
                                 type="text"
@@ -50,14 +50,14 @@ export default function Register() {
                         <div className="pt-2 flex justify-center">
                             <button
                                 type="submit"
-                                className="mt-5 font-dmsans flex items-center justify-center gap-3 px-8 py-3 rounded-full bg-white text-orange-600 font-semibold  "
+                                className="mt-5 font-dmsans flex items-center justify-center gap-3 px-8 py-3 rounded-full bg-white text-orange-600 font-bold tracking-tighter "
                             >
-                                <span>REGISTER</span>
+                                <span>SIGN UP</span>
                                 <img src={arrow} alt="arrow" className="h-6" />
                             </button>
                         </div>
-
                     </form>
+                    <h1 className="mt-8 text-center font-dmsans base font-semibold tracking-tighter">Already have account ? <span className="underline" onClick={()=>{navigate("/login")}}>Sign in.</span></h1>
                 </div>
             </div>
         </div>

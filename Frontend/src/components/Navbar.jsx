@@ -2,10 +2,12 @@ import React from "react";
 import user from "../assets/nav_user.png"
 import alarm from "../assets/Alarm.png"
 import search from "../assets/Search.png"
+import { useNavigate } from "react-router-dom";
 
 export default function Navbar() {
+  const navigate=useNavigate()
   return (
-    <div className="bg-[#FF6700] p-8">
+    <div className="bg-gradient-to-b from-[#FEC163] to-[#DE4313] p-8">
       {/* Top Section */}
       <div className="font-dmsans flex items-center justify-between">
         {/* Left Side - User Info */}
@@ -19,8 +21,8 @@ export default function Navbar() {
         </div>
 
         {/* Right Side - Icons */}
-        <div className="flex items-center space-x-4 text-white">
-          <img src={user} alt="" className="w-8 h-8 cursor-pointer" />
+        <div className="flex items-center space-x-2 text-white">
+          <button onClick={()=>{navigate("/register")}} className="border-1 border-white text-white px-3 py-2 text-sx font-bold tracking-tighter rounded-lg" >Sign Up</button>
           <img src={alarm} alt="" className="w-8 h-8 cursor-pointer" />
         </div>
       </div>
