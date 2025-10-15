@@ -7,17 +7,29 @@ import allopathy from "../assets/Allopathy.png";
 import homeopathy from "../assets/Homeopathy.png";
 import ayurvedic from "../assets/Ayurvedic.png";
 import moreThan from "../assets/moreThan.png"
+import roundArrow from "../assets/roundarrow.png"
 
-import ic1 from "../assets/hospital.webp";
-import ic2 from "../assets/hotel.jpg";
-import ic3 from "../assets/room.jpg";
-import ic4 from "../assets/ambulance.png";
-import ic5 from "../assets/emergency.jfif";
-import ic6 from "../assets/doctor.jfif";
-import ic7 from "../assets/homecare.webp";
-import ic8 from "../assets/hospitaladmission.webp";
-import ic9 from "../assets/labtest.jpg";
-import ic10 from "../assets/addpatient.jpg";
+// import ic1 from "../assets/hospital.webp";
+// import ic2 from "../assets/hotel.jpg";
+// import ic3 from "../assets/room.jpg";
+// import ic4 from "../assets/ambulance.png";
+// import ic5 from "../assets/emergency.jfif";
+// import ic6 from "../assets/doctor.jfif";
+// import ic7 from "../assets/homecare.webp";
+// import ic8 from "../assets/hospitaladmission.webp";
+// import ic9 from "../assets/labtest.jpg";
+// import ic10 from "../assets/addpatient.jpg";
+
+import ic1 from "../assets/new/hospital.png"
+import ic2 from "../assets/new/hotels.png"
+import ic3 from "../assets/new/rooms.png"
+import ic4 from "../assets/new/bookambulance.png"
+import ic5 from "../assets/new/emergency.png"
+import ic6 from "../assets/new/doctor.png"
+import ic7 from "../assets/new/homecare.png"
+import ic8 from "../assets/new/hospital.png"
+import ic9 from "../assets/new/lab.png"
+import ic10 from "../assets/new/addpatient.png"
 
 import phone from "../assets/phone.png";
 import wp from "../assets/wp.png";
@@ -65,60 +77,31 @@ export default function AllServices() {
     }, [])
 
     return (
-        <div className="font-dmsans w-full bg-white flex flex-col gap-20 items-center p-4">
-            {/* Categories */}
-            <div className="flex flex-wrap justify-center gap-4 w-full max-w-sm sm:max-w-sm">
-                {categories.map((cat) => (
-                    <button
-                        key={cat.title}
-                        onClick={() => setSelectedCategory(cat.title)}
-                        className={`flex flex-col items-center justify-center w-24 sm:w-28 rounded-lg py-2 sm:py-3 transition-all duration-200 ${selectedCategory === cat.title ? "bg-gradient-to-b from-[#00DDC5] to-[#00695E] text-white scale-125" : "bg-gradient-to-b from-[#00DDC5] to-[#00695E] text-white"}`} >
-                        <img src={cat.icon} alt={cat.title} className="w-6 h-6 sm:w-7 sm:h-7 mb-1" />
-                        <span className="text-xs sm:text-sm font-medium"> {cat.title} </span>
-                    </button>
-                ))}
-            </div>
+        <div className="font-dmsans w-full bg-white flex flex-col gap-20 items-center p-4 rounded-[24px]">
+            <div className="bg-white flex flex-col gap-10 w-full">
+                <div className="flex flex-col gap-1">
+                    <div className="flex gap-1 items-center">
+                        <h1 className="text-[34px] font-semibold text-[#4B9B6E] tracking-tighter">All Services</h1>
+                        <img src={roundArrow} alt="" className="h-[36px] w-[36px]" />
+                    </div>
+                    <p className="text-[#4B9B6E] text-xs leading-[15px] max-w-[170px]">Lorem ipsum dolor sit amet, consectetur adipiscing elit,</p>
+                </div>
 
-            {/* Services Grid */}
-            <div className="mx-auto w-full max-w-4xl px-2">
-                <div className="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
-                    {filteredServices.map((item, index) => (
+                <div className="grid grid-cols-3 sm:grid-cols-2 md:grid-cols-3 gap-x-6 px-1 gap-y-5 w-full">
+                    {services.map((item, index) => (
                         <button
-                        data-aos="fade-up"
-                        data-aos-duration="1500"
-                        data-aos-anchor-placement="center-bottom"
                             key={index}
                             onClick={() => handleCardClick(item)}
-                            className="relative text-left rounded-[16px] overflow-hidden border-2 border-[#E6E6E6] bg-white focus:outline-none focus:ring-2 focus:ring-orange-300 transform transition duration-150 active:scale-95"
-                            aria-label={item.title.replace("\n", " ")}
+                            className="flex flex-col gap-2 items-center text-center focus:outline-none active:scale-95 transition-transform duration-150"
                         >
-                            <div
-                                className="h-36 sm:h-40 bg-center bg-cover relative rounded-[16px]"
-                                style={{ backgroundImage: `url(${item.image})` }}
-                                aria-hidden="true"
-                            >
-                                <div className="absolute inset-0 bg-gradient-to-b from-black/10 to-black/80 rounded-[16px]" />
-                                <div className="absolute text-center bottom-4 left-4 flex flex-col -space-y-1">
-                                    <h1 className="text-white text-3xl whitespace-pre-line tracking-tighter">
-                                        {item.title}
-                                    </h1>
-                                    <h1 className="text-white text-lg whitespace-pre-line tracking-tighter">
-                                        {item.sub}
-                                    </h1>
-                                </div>
-                            </div>
-
-                            <div className="px-4 py-4 bg-white">
-                                <div className="flex items-center justify-between">
-                                    <div>
-                                        <p className="text-sm text-[#8B8B8B] leading-[16px] font-medium">Lorem Ipsum Dolor Sit Amet,</p>
-                                    </div>
-                                    <div className="flex-shrink-0">
-                                        <div className="h-8 w-8  flex items-center justify-center ">
-                                            <img src={moreThan} alt="" className="h-4 w-4" />
-                                        </div>
-                                    </div>
-                                </div>
+                            <img
+                                src={item.image}
+                                alt={item.title}
+                                className="h-[76px] w-[76px] object-contain"
+                            />
+                            <div className="font-dmsans tracking-tighter flex flex-col text-[16px] font-semibold text-[#4B9B6E] -space-y-2">
+                                <p>{item.title}</p>
+                                <p>{item.sub}</p>
                             </div>
                         </button>
                     ))}

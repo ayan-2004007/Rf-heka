@@ -6,7 +6,7 @@ import question from "../assets/question.png"
 
 export default function Footer() {
   return (
-    <footer className="font-dmsans bg-[#c04d00] text-white py-3 fixed bottom-0 w-full z-50">
+    <footer className="font-dmsans bg-[#4B9B6E] text-white py-3 fixed bottom-0 w-full z-50">
       <div className="flex justify-around items-center text-center">
         {/* Home */}
         <div className="flex flex-col items-center">

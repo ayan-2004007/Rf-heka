@@ -1,40 +1,54 @@
 import React from "react";
-import user from "../assets/nav_user.png"
-import alarm from "../assets/Alarm.png"
+import Notification from "../assets/Alarm.png"
 import search from "../assets/Search.png"
-import { useNavigate } from "react-router-dom";
 
 export default function Navbar() {
-  const navigate=useNavigate()
   return (
-    <div className="bg-gradient-to-b from-[#FEC163] to-[#DE4313] px-8 pb-8 pt-6">
-      {/* Top Section */}
-      <div className="font-dmsans flex items-center justify-between">
-        <div>
-          <h1 className="font-literata text-white text-4xl font-bold">HEKA</h1>
-        </div>
-        <div className="flex items-center space-x-2 text-white">
-          <button onClick={()=>{navigate("/register")}} className="border-1 border-white text-white px-3 py-2 text-sm font-bold tracking-tighter rounded-lg" >Sign Up</button>
-          <img src={alarm} alt="" className="w-8 h-8 cursor-pointer" />
-        </div>
-      </div>
+    <header className="bg-[#4B9B6E] font-dmsans text-white rounded-b-[60px] pb-6">
+      <div className="max-w-4xl mx-auto px-6 py-6 relative">
+        {/* Top row: brand + actions */}
+        <div className="flex items-center justify-between">
+          <div className="flex items-center gap-6">
+            <div className="text-[28px] font-literata font-extrabold tracking-wide">HEKA</div>
+          </div>
 
-      {/* Search Bar */}
-      <div className="mt-4 ">
-        <div className="flex items-center bg-white rounded-full px-4 py-2 shadow-sm">
-          <img 
-            src={search}
-            alt=""
-            className="w-5 h-5 text-gray-400"
-          />
-            
-          <input
-            type="text"
-            placeholder="Search"
-            className="ml-2  font-dmsans  bg-transparent outline-none text-gray-700 placeholder-gray-400 w-full text-sm"
-          />
+          <div className="flex items-center gap-3">
+            <button className="px-3 py-1.5 border border-white rounded-lg text-sm font-medium bg-transparent hover:bg-white/10">
+              Sign Up
+            </button>
+
+            <button
+              aria-label="notifications"
+              className="w-10 h-10 rounded-lg bg-white/90 flex items-center justify-center"
+            >
+              <img src={Notification} alt="" className="invert opacity-50 w-6 h-6" />
+            </button>
+          </div>
+        </div>
+
+        {/* Middle content: user name + address and search */}
+        <div className="mt-6 flex flex-col sm:flex-row sm:items-center sm:justify-between gap-6">
+          <div className="flex flex-col gap-1">
+            <div className="text-[22px] font-bold tracking-tighter">Ujjal Dey Sarkar</div>
+            <p className="text-xs leading-[15px] max-w-[170px]">Pioneer Tower Premises No. 20-085, Street No. 85</p>
+          </div>
+
+          <div className="mt-4 ">
+            <div className="flex items-center bg-white rounded-full px-4 py-3">
+              <img
+                src={search}
+                alt=""
+                className="w-8 h-8"
+              />
+              <input
+                type="text"
+                placeholder="Search"
+                className="ml-2 font-dmsans bg-transparent outline-none text-gray-700 placeholder-gray-400 w-full text-lg font-semibold tracking-tighter "
+              />
+            </div>
+          </div>
         </div>
       </div>
-    </div>
+    </header>
   );
 }

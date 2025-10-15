@@ -5,13 +5,24 @@ import AllServices from '../components/AllServices'
 import Navbar from '../components/Navbar'
 import Footer from '../components/Footer'
 import Slider from '../components/Slider'
-const Home=()=>{
-    return(
+import PartnerShip from '../components/PartnerShip'
+import CategoriesCard from '../components/CategoriesCard'
+import WhatsNew from '../components/WhatsNew'
+import JoinUs from '../components/JoinUs'
+const Home = () => {
+    return (
         <>
-        <Navbar/>
-        <AllServices/>
-        <Slider/>
-        {/* <Footer/> */}
+            <div className='bg-[#E3E3E3] flex flex-col gap-6'>
+                <Navbar />
+                <div className='px-3 space-y-4'>
+                    <CategoriesCard/>
+                    <AllServices />
+                    <PartnerShip />
+                    <Slider />
+                    <WhatsNew/>
+                    <JoinUs/>
+                </div>
+            </div>
         </>
     )
 }

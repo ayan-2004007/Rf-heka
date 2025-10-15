@@ -13,7 +13,7 @@ export default function Slider() {
   ];
 
   return (
-    <div className="w-full flex justify-center pb-28 mt-10">
+    <div className="w-full flex justify-center mt-20">
       <div className="w-[90%] max-w-md">
         {/* Slider container */}
         <div className="relative">
