@@ -21,7 +21,7 @@ const FindHotels = () => {
     }
 
     return (
-        <div className="font-dmsans min-h-screen bg-[#fff3eb] px-4 py-8 flex flex-col items-center justify-center pb-28">
+        <div className="font-dmsans min-h-screen bg-[#e0ffee] px-4 py-8 flex flex-col items-center justify-center pb-28">
             <div className="flex flex-col gap-4 mb-20">
                 <h1 className="text-5xl text-center text-[#787c86] tracking-tight font-medium">Hotels in</h1>
                 <h1 className="text-5xl text-center text-[#2F3B59] tracking-tight font-medium">{formattedCity}</h1>
@@ -34,7 +34,7 @@ const FindHotels = () => {
                         const ratingNum = parseInt(h.rating) || 0
                         return (
                             <div key={i} className="w-full bg-white p-4 rounded-2xl shadow-md flex items-start space-x-4">
-                                <div className="p-3 rounded-xl bg-[#F9C6A3] flex items-center justify-center">
+                                <div className="p-3 rounded-xl bg-[#93D8B1] flex items-center justify-center">
                                     <img src={hotelIcon} alt={h.name} className="w-8 h-8 opacity-60" />
                                 </div>
                                 <div className="flex flex-col gap-3">
@@ -54,7 +54,7 @@ const FindHotels = () => {
                                         <div className="flex">{renderStars(ratingNum)}</div>
                                         {h.hours && <p className="text-[#6b6b6b] tracking-tight">{h.hours}</p>}
                                     </div>
-                                    <a href="tel:6289924753" className="bg-[#FF6700] hover:bg-[#b94a00] text-white font-semibold py-2 px-3 rounded-lg w-36 tracking-tighter">
+                                    <a href="tel:6289924753" className="bg-[#4B9B6E] hover:bg-[#235e3c] text-white font-semibold py-2 px-3 rounded-lg w-36 tracking-tighter">
                                         Contact Heka
                                     </a>
                                 </div>

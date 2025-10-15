@@ -51,7 +51,7 @@ export default function CenterLabTestForm() {
 
   if (submitted) {
     return (
-      <div className="font-dmsans min-h-screen w-full flex flex-col items-center justify-center bg-[#fff3eb] rounded-2xl shadow-md text-center">
+      <div className="font-dmsans min-h-screen w-full flex flex-col items-center justify-center bg-[#e0ffee] rounded-2xl shadow-md text-center">
         <div className="text-4xl mb-4">✅</div>
         <h1 className="text-4xl text-center text-[#2F3B59] tracking-tight font-medium">Hospital Lab Appointment Confirmed</h1>
         <p className="mt-4 text-gray-600 max-w-md">Please arrive 10 minutes before your scheduled time with your ID and any referral documents.</p>
@@ -60,7 +60,7 @@ export default function CenterLabTestForm() {
   }
 
   return (
-    <form onSubmit={handleSubmit} className="font-dmsans max-w-lg mx-auto py-20 px-6 bg-[#fff3eb] rounded-2xl shadow flex flex-col gap-6">
+    <form onSubmit={handleSubmit} className="font-dmsans max-w-lg mx-auto py-20 px-6 bg-[#e0ffee] rounded-2xl shadow flex flex-col gap-6">
       <h1 className="text-5xl text-center text-[#2F3B59] mb-8 tracking-tight font-medium">Hospital Lab Appointment</h1>
 
       {/* Patient Info */}
@@ -160,7 +160,7 @@ export default function CenterLabTestForm() {
         <input name="insuranceId" value={form.insuranceId} onChange={handleChange} placeholder="Insurance ID (optional)" className="bg-white border border-gray-400 rounded-md p-2 text-base" />
       </div>
 
-      <button type="submit" className="bg-[#FF6700] hover:bg-[#b94a00] text-white font-semibold py-4 px-6 rounded-lg tracking-tighter mt-4 self-center">Confirm Appointment</button>
+      <button type="submit" className="bg-[#4B9B6E] hover:bg-[#235e3c] text-white font-semibold py-4 px-6 rounded-lg tracking-tighter mt-4 self-center">Confirm Appointment</button>
     </form>
   )
 }

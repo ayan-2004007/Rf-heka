@@ -9,23 +9,9 @@ import ayurvedic from "../assets/Ayurvedic.png";
 import moreThan from "../assets/moreThan.png"
 import roundArrow from "../assets/roundarrow.png"
 
-// import ic1 from "../assets/hospital.webp";
-// import ic2 from "../assets/hotel.jpg";
-// import ic3 from "../assets/room.jpg";
-// import ic4 from "../assets/ambulance.png";
-// import ic5 from "../assets/emergency.jfif";
-// import ic6 from "../assets/doctor.jfif";
-// import ic7 from "../assets/homecare.webp";
-// import ic8 from "../assets/hospitaladmission.webp";
-// import ic9 from "../assets/labtest.jpg";
-// import ic10 from "../assets/addpatient.jpg";
-
 import ic1 from "../assets/heartrate.png"
 import ic2 from "../assets/nurse-male.png"
 import ic3 from "../assets/nurse-female.png"
-
-import phone from "../assets/phone.png";
-import wp from "../assets/wp.png";
 
 const services = [
     { title: "Nurse", sub: "Female", image: ic3, route: "/choose-city/hospitals" },
@@ -70,14 +56,14 @@ export default function JoinUs() {
                         <h1 className="text-[34px] font-semibold text-[#4B9B6E] tracking-tighter">To Join Us</h1>
                         <img src={roundArrow} alt="" className="h-[36px] w-[36px]" />
                     </div>
-                    <p className="text-[#4B9B6E] text-xs leading-[15px] max-w-[170px]">Lorem ipsum dolor sit amet, consectetur adipiscing elit,</p>
+                    {/* <p className="text-[#4B9B6E] text-xs leading-[15px] max-w-[170px]">Lorem ipsum dolor sit amet, consectetur adipiscing elit,</p> */}
                 </div>
 
                 <div className="grid grid-cols-3 sm:grid-cols-2 md:grid-cols-3 gap-x-6 px-1 gap-y-5 w-full">
                     {services.map((item, index) => (
-                        <button
+                        <a
+                            href="tel:6289924753"
                             key={index}
-                            onClick={() => handleCardClick(item)}
                             className="flex flex-col gap-2 items-center text-center focus:outline-none active:scale-95 transition-transform duration-150"
                         >
                             <div className="bg-[#93D8B1] p-2 rounded-[12px]">
@@ -91,7 +77,7 @@ export default function JoinUs() {
                                 <p>{item.title}</p>
                                 <p>{item.sub}</p>
                             </div>
-                        </button>
+                        </a>
                     ))}
                 </div>
             </div>

@@ -4,12 +4,13 @@ import { Pagination, Autoplay } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/pagination";
 
+import b1 from "../assets/banner1.png"
+import b2 from "../assets/banner2.png"
+import b3 from "../assets/banner3.png"
+
 export default function Slider() {
   const images = [
-    "https://picsum.photos/id/1015/600/200",
-    "https://picsum.photos/id/1025/600/200",
-    "https://picsum.photos/id/1035/600/200",
-    "https://picsum.photos/id/1045/600/200",
+    b1,b2,b3
   ];
 
   return (

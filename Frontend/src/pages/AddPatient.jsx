@@ -8,7 +8,7 @@ export default function AddPatient() {
 
             {/* Card */}
             <div className="  rounded-2xl overflow-hidden shadow-lg mx-auto w-full max-w-sm">
-                <div className="p-8 bg-gradient-to-b from-[#FEC163] to-[#DE4313] text-white py-20">
+                <div className="p-8 bg-gradient-to-b from-[#B8D9C8] to-[#4B9B6E] text-white py-20">
                     <h1 className="text-center font-dmsans text-[44px] font-semibold tracking-wide">Add Patient</h1>
 
                     <form className="mt-8 space-y-2" onSubmit={(e) => e.preventDefault()}>

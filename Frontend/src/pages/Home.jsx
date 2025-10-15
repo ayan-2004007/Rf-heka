@@ -14,7 +14,7 @@ const Home = () => {
         <>
             <div className='bg-[#E3E3E3] flex flex-col gap-6'>
                 <Navbar />
-                <div className='px-3 space-y-4'>
+                <div className='px-3 space-y-8'>
                     <CategoriesCard/>
                     <AllServices />
                     <PartnerShip />

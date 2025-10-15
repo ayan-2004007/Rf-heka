@@ -16,15 +16,16 @@ export default function CategoriesCard() {
 
         },
         {
-            key: "Homeopathy",
-            label: "Homeopathy",
-            icon: <img src={Homeopathy} alt="" />
-        },
-        {
             key: "Ayurvedic",
             label: "Ayurvedic",
             icon: <img src={Ayurvedic} alt="" />
         },
+        {
+            key: "Homeopathy",
+            label: "Homeopathy",
+            icon: <img src={Homeopathy} alt="" />
+        },
+        
     ];
 
     return (
@@ -35,7 +36,7 @@ export default function CategoriesCard() {
                         <h1 className="text-[34px] font-semibold text-[#4B9B6E] tracking-tighter">Categories</h1>
                         <img src={roundArrow} alt="" className="h-[36px] w-[36px]" />
                     </div>
-                    <p className="text-[#4B9B6E] text-xs leading-[15px] max-w-[170px]">Lorem ipsum dolor sit amet, consectetur adipiscing elit,</p>
+                    {/* <p className="text-[#4B9B6E] text-xs leading-[15px] max-w-[170px]">Lorem ipsum dolor sit amet, consectetur adipiscing elit,</p> */}
                 </div>
 
                 <div className="flex gap-4 justify-center">

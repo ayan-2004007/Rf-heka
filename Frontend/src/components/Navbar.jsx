@@ -14,7 +14,7 @@ export default function Navbar() {
         <div className="flex items-center justify-between">
           <div className="flex flex-col items-start">
             <div className="text-[28px] font-literata font-extrabold tracking-wide">HEKA</div>
-            <p className="text-xs leading-[15px] max-w-[170px]">Heka - care that cares</p>
+            <p className="text-xs leading-[15px] max-w-[170px]">care that cares</p>
           </div>
 
           <div className="flex items-center gap-3">
@@ -35,7 +35,7 @@ export default function Navbar() {
         <div className="mt-6 flex flex-col sm:flex-row sm:items-center sm:justify-between gap-6">
           <div className="flex flex-col gap-1">
             <div className="text-[22px] font-bold tracking-tighter">{name}</div>
-            <p className="text-xs leading-[15px] max-w-[170px]">Pioneer Tower Premises No. 20-085, Street No. 85</p>
+            {/* <p className="text-xs leading-[15px] max-w-[170px]">Pioneer Tower Premises No. 20-085, Street No. 85</p> */}
           </div>
 
           <div className="mt-4 ">

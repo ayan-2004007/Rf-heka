@@ -5,6 +5,7 @@ import bg from "../assets/login.png";
 import arrow from "../assets/arrow.png";
 
 export default function Login() {
+  const backendUrl = import.meta.env.VITE_BACKEND_URI
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [loading, setLoading] = useState(false);
@@ -16,9 +17,8 @@ export default function Login() {
 
     try {
       setLoading(true);
-
       // Send login request to backend
-      const response = await axios.post("http://192.168.1.32:8080/api/auth/login", {
+      const response = await axios.post(backendUrl+"/api/auth/login", {
         email,
         password,
       });

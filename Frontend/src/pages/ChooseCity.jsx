@@ -21,7 +21,7 @@ const ChooseCity = () => {
   };
 
   return (
-    <div className="font-dmsans min-h-screen flex items-center justify-center bg-[#fff3eb] px-4">
+    <div className="font-dmsans min-h-screen flex items-center justify-center bg-[#e0ffee] px-4">
       <div className="w-full max-w-md">
         {/* Heading */}
         <h1 className="text-5xl text-center text-[#2F3B59] mb-20 tracking-tighter font-medium">
@@ -36,7 +36,7 @@ const ChooseCity = () => {
               onClick={() => handleCityClick(city.name)}
               className="w-full flex items-center gap-5 bg-white shadow-md rounded-2xl pl-3 py-3 transition hover:shadow-lg active:scale-[0.97]"
             >
-              <div className="p-3 rounded-xl bg-[#F9C6A3] flex items-center justify-center">
+              <div className="p-3 rounded-xl bg-[#93D8B1] flex items-center justify-center">
                 <img src={city.icon} alt={city.name} className="w-8 h-8" />
               </div>
               <div className="flex items-center gap-2">

@@ -84,7 +84,7 @@ export default function AllServices() {
                         <h1 className="text-[34px] font-semibold text-[#4B9B6E] tracking-tighter">All Services</h1>
                         <img src={roundArrow} alt="" className="h-[36px] w-[36px]" />
                     </div>
-                    <p className="text-[#4B9B6E] text-xs leading-[15px] max-w-[170px]">Lorem ipsum dolor sit amet, consectetur adipiscing elit,</p>
+                    {/* <p className="text-[#4B9B6E] text-xs leading-[15px] max-w-[170px]">Lorem ipsum dolor sit amet, consectetur adipiscing elit,</p> */}
                 </div>
 
                 <div className="grid grid-cols-3 sm:grid-cols-2 md:grid-cols-3 gap-x-6 px-1 gap-y-5 w-full">

@@ -5,6 +5,7 @@ import bg from "../assets/register.png";
 import arrow from "../assets/arrow.png";
 
 export default function Register() {
+      const backendUrl = import.meta.env.VITE_BACKEND_URI
     const [formData, setFormData] = useState({
         name: "",
         email: "",
@@ -34,8 +35,8 @@ export default function Register() {
         setMessage("Registering...");
 
         try {
-            const response = await axios.post(
-                "http://192.168.1.32:8080/api/auth/register",
+            const response = await axios.post(backendUrl+
+                "/api/auth/register",
                 formData,
                 {
                     headers: {
