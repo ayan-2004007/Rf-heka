@@ -1,19 +1,24 @@
 import React from "react";
 import Notification from "../assets/Alarm.png"
 import search from "../assets/Search.png"
+import { useNavigate } from "react-router-dom";
 
 export default function Navbar() {
+  const navigate=useNavigate()
+  const userData=JSON.parse(localStorage.getItem("userData"))|| {}
+  const name=userData.name || "Welcome User"
   return (
     <header className="bg-[#4B9B6E] font-dmsans text-white rounded-b-[60px] pb-6">
       <div className="max-w-4xl mx-auto px-6 py-6 relative">
         {/* Top row: brand + actions */}
         <div className="flex items-center justify-between">
-          <div className="flex items-center gap-6">
+          <div className="flex flex-col items-start">
             <div className="text-[28px] font-literata font-extrabold tracking-wide">HEKA</div>
+            <p className="text-xs leading-[15px] max-w-[170px]">Heka - care that cares</p>
           </div>
 
           <div className="flex items-center gap-3">
-            <button className="px-3 py-1.5 border border-white rounded-lg text-sm font-medium bg-transparent hover:bg-white/10">
+            <button onClick={()=>{navigate("/register")}} className="px-3 py-1.5 border border-white rounded-lg text-sm font-medium bg-transparent hover:bg-white/10">
               Sign Up
             </button>
 
@@ -29,7 +34,7 @@ export default function Navbar() {
         {/* Middle content: user name + address and search */}
         <div className="mt-6 flex flex-col sm:flex-row sm:items-center sm:justify-between gap-6">
           <div className="flex flex-col gap-1">
-            <div className="text-[22px] font-bold tracking-tighter">Ujjal Dey Sarkar</div>
+            <div className="text-[22px] font-bold tracking-tighter">{name}</div>
             <p className="text-xs leading-[15px] max-w-[170px]">Pioneer Tower Premises No. 20-085, Street No. 85</p>
           </div>
 
