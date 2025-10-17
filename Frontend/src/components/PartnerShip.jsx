@@ -7,22 +7,22 @@ const PartnerShip = () => {
             <div className="w-full overflow-hidden">
                 <Marquee speed={70} gradient={false}>
                     <div className="">
-                        <p className="text-[#4B9B6E] text-[44px] font-semibold tracking-tighter">
-                            Be Our Partner . Be Our Partner . Be Our Partner . Be Our Partner .
+                        <p className="text-[#4B9B6E] text-[44px] font-semibold tracking-tight ml-10">
+                            Be Our Partner.
                         </p>
                     </div>
                     <div className="">
-                        <p className="text-[#4B9B6E] text-[44px] font-semibold tracking-tighter">
-                            Be Our Partner . Be Our Partner . Be Our Partner . Be Our Partner .
+                        <p className="text-[#4B9B6E] text-[44px] font-semibold tracking-tight ml-10">
+                            Be Our Partner.
                         </p>
                     </div>
                 </Marquee>
 
             </div>
 
-            <button className="bg-[#4B9B6E] text-white text-lg font-semibold py-3 px-10 rounded-[6px] tracking-tight">
+            <a href="tel:6289924753" className="bg-[#4B9B6E] text-white text-lg font-semibold py-3 px-10 rounded-[6px] tracking-tight">
                 Call Us
-            </button>
+            </a>
         </div>
     );
 };

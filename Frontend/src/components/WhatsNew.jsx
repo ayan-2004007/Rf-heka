@@ -16,7 +16,7 @@ const WhatsNew = () => {
         { title: "Cab Services", image: cab },
         { title: "Food Delivery", image: food },
         { title: "Insurance", image: insurance },
-        { title: "Government Scheme", image: govscheme },
+        { title: "Government Schemes", image: govscheme },
     ];
 
     return (

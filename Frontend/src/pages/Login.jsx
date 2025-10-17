@@ -17,17 +17,14 @@ export default function Login() {
 
     try {
       setLoading(true);
-      // Send login request to backend
       const response = await axios.post(backendUrl+"/api/auth/login", {
         email,
         password,
       });
 
       console.log("Response:", response.data);
-
-      // Store token or user info if needed
       localStorage.setItem("userData", JSON.stringify(response.data));
-
+      localStorage.setItem("isLoggedIn","true")
       alert("Login successful!");
 
      

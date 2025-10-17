@@ -23,7 +23,7 @@ import Register from "./pages/Register"
 
 import Footer from './components/Footer'
 function App() {
-
+// localStorage.removeItem("preloaderShown")
     return (
         <>
             <Routes>

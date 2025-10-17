@@ -16,14 +16,14 @@ export default function Footer() {
         </div>
 
         {/* Reports */}
-        <div className="flex flex-col items-center">
+        <div onClick={()=>{navigate("/patient/add")}} className="flex flex-col items-center">
           <img src={addpatient} className="w-6 h-6 mb-1 invert" />
           <span className="font-dmsans text-xs">Add Patient</span>
         </div>
 
         {/* Help */}
         <div className="flex flex-col items-center">
-          <a href="tel:6289924753" onClick={()=>{navigate("/register")}} className="border-1 border-white text-white px-3 py-2 text-sm font-bold tracking-tighter rounded-lg" >Emergency</a>
+          <a href="tel:6289924753" className="border-1 border-white text-white px-3 py-2 text-sm font-bold tracking-tighter rounded-lg" >Emergency</a>
         </div>
       </div>
     </footer>

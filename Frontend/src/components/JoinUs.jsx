@@ -14,8 +14,8 @@ import ic2 from "../assets/nurse-male.png"
 import ic3 from "../assets/nurse-female.png"
 
 const services = [
-    { title: "Nurse", sub: "Female", image: ic3, route: "/choose-city/hospitals" },
-    { title: "Nurse", sub: "Male", image: ic2, route: "/choose-city/hotels" },
+    { title: "Nursing Asst.", sub: "Female", image: ic3, route: "/choose-city/hospitals" },
+    { title: "Nursing Asst.", sub: "Male", image: ic2, route: "/choose-city/hotels" },
     { title: "Health", sub: "technician", image: ic1, route: "/choose-city/rooms" },
 
 ];
